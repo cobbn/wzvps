@@ -143,7 +143,7 @@ def get_progress_bar_string(pct):
     cPart = int(p % 8 - 1)
     p_str = '■' * cFull
     if cPart >= 0:
-        p_str += ['▤', '▥', '▦', '▧', '▨', '▩', '■'][cPart]
+        p_str += ['■', '■', '■', '■', '■', '■', '■'][cPart]
     p_str += '□' * (12 - cFull)
     return f"[{p_str}]"
 
@@ -215,14 +215,12 @@ def get_readable_message():
         elapsed = time() - download.message.date.timestamp()
         msg += BotTheme('STATUS_NAME', Name="Task is being Processed!" if config_dict['SAFE_MODE'] and elapsed >= config_dict['STATUS_UPDATE_INTERVAL'] else escape(f'{download.name()}'))
         if download.status() not in [MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_SEEDING]:
-            msg += BotTheme('BAR', Bar=f"{get_progress_bar_string(download.progress())} {download.progress()}")
+            msg += BotTheme('BAR', Bar=f"{get_progress_bar_string(download.progress())}
+            msg += BotTheme('Speed', Speed=download.speed())
             msg += BotTheme('PROCESSED', Processed=f"{download.processed_bytes()} of {download.size()}")
             msg += BotTheme('STATUS', Status=download.status(), Url=msg_link)
             msg += BotTheme('ETA', Eta=download.eta())
-            msg += BotTheme('SPEED', Speed=download.speed())
-            msg += BotTheme('ELAPSED', Elapsed=get_readable_time(elapsed))
-            msg += BotTheme('ENGINE', Engine=download.eng())
-            msg += BotTheme('STA_MODE', Mode=download.upload_details['mode'])
+            msg += BotTheme('MODE', Mode=['mode'])
             if hasattr(download, 'seeders_num'):
                 try:
                     msg += BotTheme('SEEDERS', Seeders=download.seeders_num())
@@ -282,7 +280,7 @@ def get_readable_message():
 
     msg += BotTheme('FOOTER')
     buttons = ButtonMaker()
-    buttons.ibutton(BotTheme('REFRESH', Page=f"{PAGE_NO}/{PAGES}"), "status ref")
+    buttons.ibutton(BotTheme('REFRESH'), "status ref")
     if tasks > STATUS_LIMIT:
         if config_dict['BOT_MAX_TASKS']:
             msg += BotTheme('BOT_TASKS', Tasks=tasks, Ttask=config_dict['BOT_MAX_TASKS'], Free=config_dict['BOT_MAX_TASKS']-tasks)
@@ -341,7 +339,7 @@ def is_url(url):
 
 
 def is_gdrive_link(url):
-    return "drive.google.com" in url
+    return "drive.google.com" in url or "drive.usercontent.google.com" in url
 
 
 def is_telegram_link(url):
