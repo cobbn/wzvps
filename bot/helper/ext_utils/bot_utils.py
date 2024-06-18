@@ -286,7 +286,7 @@ def get_readable_message():
             msg += BotTheme('TASKS', Tasks=tasks)
         buttons = ButtonMaker()
         buttons.ibutton(BotTheme('PREVIOUS'), "status pre")
-        buttons.ibutton(BotTheme('REFRESH', "status ref")
+        buttons.ibutton(BotTheme('REFRESH'), "status ref")
         buttons.ibutton(BotTheme('NEXT'), "status nex")
     button = buttons.build_menu(3)
     msg += BotTheme('FREE', free=get_readable_file_size(disk_usage(config_dict['DOWNLOAD_DIR']).free), free_p=round(100-disk_usage(config_dict['DOWNLOAD_DIR']).percent, 1))
