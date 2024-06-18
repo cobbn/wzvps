@@ -220,7 +220,7 @@ def get_readable_message():
             msg += BotTheme('PROCESSED', Processed=f"{download.processed_bytes()} of {download.size()}")
             msg += BotTheme('STATUS', Status=download.status(), Url=msg_link)
             msg += BotTheme('ETA', Eta=download.eta())
-            msg += BotTheme('MODE', Mode=['mode'])
+            msg += BotTheme('MODE', Mode=download.upload_details['mode'])
             if hasattr(download, 'seeders_num'):
                 try:
                     msg += BotTheme('SEEDERS', Seeders=download.seeders_num())
