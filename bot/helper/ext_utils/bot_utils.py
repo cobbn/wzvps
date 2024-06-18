@@ -277,7 +277,6 @@ def get_readable_message():
         ]:
             up_speed += speed_in_bytes_per_second
 
-    msg += BotTheme('FOOTER')
     buttons = ButtonMaker()
     buttons.ibutton(BotTheme('REFRESH'), "status ref")
     if tasks > STATUS_LIMIT:
@@ -287,7 +286,7 @@ def get_readable_message():
             msg += BotTheme('TASKS', Tasks=tasks)
         buttons = ButtonMaker()
         buttons.ibutton(BotTheme('PREVIOUS'), "status pre")
-        buttons.ibutton(BotTheme('REFRESH', Page=f"{PAGE_NO}/{PAGES}"), "status ref")
+        buttons.ibutton(BotTheme('REFRESH', "status ref")
         buttons.ibutton(BotTheme('NEXT'), "status nex")
     button = buttons.build_menu(3)
     msg += BotTheme('FREE', free=get_readable_file_size(disk_usage(config_dict['DOWNLOAD_DIR']).free), free_p=round(100-disk_usage(config_dict['DOWNLOAD_DIR']).percent, 1))
