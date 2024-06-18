@@ -14,7 +14,7 @@ from lxml.etree import HTML
 from requests import Session, session as req_session, post
 from urllib.parse import parse_qs, quote, unquote, urlparse, urljoin
 from cloudscraper import create_scraper
-from lk21 import Bypass
+#from lk21 import Bypass
 from http.cookiejar import MozillaCookieJar
 
 from bot import LOGGER, config_dict
