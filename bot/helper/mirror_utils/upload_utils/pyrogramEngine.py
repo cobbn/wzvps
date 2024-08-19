@@ -46,7 +46,7 @@ class TgUploader:
         self.__media_dict = {'videos': {}, 'documents': {}}
         self.__last_msg_in_group = False
         self.__prm_media = False
-        self.__client = bot
+        self.__client = user
         self.__up_path = ''
         self.__mediainfo = False
         self.__as_doc = False
@@ -324,7 +324,6 @@ class TgUploader:
                                         await self.__send_media_group(subkey, key, msgs)
                     self.__last_msg_in_group = False
                     self.__last_uploaded = 0
-                    await self.__switching_client()
                     await self.__upload_file(cap_mono, file_)
                     if self.__leechmsg and not isDeleted and config_dict['CLEAN_LOG_MSG']:
                         await deleteMessage(list(self.__leechmsg.values())[0])
