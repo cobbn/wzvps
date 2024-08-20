@@ -210,7 +210,7 @@ class WZMLStyle:
 
     ###--------BUTTONS-------
     PREVIOUS = '⫷'
-    REFRESH = '🤖'
+    REFRESH = 'Reaper PVT Bot'
     NEXT = '⫸'
     # ---------------------
 
