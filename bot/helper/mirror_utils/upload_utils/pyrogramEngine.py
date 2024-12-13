@@ -46,7 +46,7 @@ class TgUploader:
         self.__media_dict = {'videos': {}, 'documents': {}}
         self.__last_msg_in_group = False
         self.__prm_media = False
-        self.__client = user
+        self.__client = bot
         self.__up_path = ''
         self.__mediainfo = False
         self.__as_doc = False
