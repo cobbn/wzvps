@@ -204,6 +204,9 @@ def get_readable_message():
     msg = ""
     button = None
     STATUS_LIMIT = config_dict['STATUS_LIMIT']
+    sent = get_readable_file_size(net_io_counters().bytes_sent)
+    recv = get_readable_file_size(net_io_counters().bytes_recv)
+    traf = get_readable_file_size(net_io_counters().bytes_sent + net_io_counters().bytes_recv)
     tasks = len(download_dict)
     globals()['PAGES'] = (tasks + STATUS_LIMIT - 1) // STATUS_LIMIT
     if PAGE_NO > PAGES and PAGES != 0:
@@ -291,6 +294,7 @@ def get_readable_message():
     button = buttons.build_menu(3)
     msg += BotTheme('FREE', free=get_readable_file_size(disk_usage(config_dict['DOWNLOAD_DIR']).free), free_p=round(100-disk_usage(config_dict['DOWNLOAD_DIR']).percent, 1))
     msg += BotTheme('uptime', uptime=get_readable_time(time() - botStartTime))
+    msg += BotTheme('traf')
     return msg, button
 
 
