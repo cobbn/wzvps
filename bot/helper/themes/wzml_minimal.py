@@ -58,7 +58,7 @@ class WZMLStyle:
 <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
     
     '''
-    SYS_STATS = '''<b><i>OS SYSTEM :</i></b>
+    SYS_STATS = '''<b>OS SYSTEM :</b>
 <b>OS Uptime :</b> {os_uptime}
 <b>OS Version :</b> {os_version}
 <b>OS Arch :</b> {os_arch}
@@ -78,7 +78,7 @@ class WZMLStyle:
 <b>Total Core(s) :</b> {total_core}
 <b>Usable CPU(s) :</b> {cpu_use}
     '''
-    REPO_STATS = ''' <b><i>REPO STATISTICS :</i></b>
+    REPO_STATS = ''' <b>REPO STATISTICS :</b>
 <b>Bot Updated :</b> {last_commit}
 <b>Current Version :</b> {bot_version}
 <b>Latest Version :</b> {lat_version}
@@ -86,7 +86,7 @@ class WZMLStyle:
 
  <b>REMARKS :</b> <code>{remarks}</code>
     '''
-    BOT_LIMITS = ''' <b><i>BOT LIMITATIONS :</i></b>
+    BOT_LIMITS = ''' <b>BOT LIMITATIONS :</b>
 <b>Direct Limit :</b> {DL} GB
 <b>Torrent Limit :</b> {TL} GB
 <b>GDrive Limit :</b> {GL} GB
@@ -206,7 +206,8 @@ class WZMLStyle:
     TASKS =  '<b>Tasks:</b> {Tasks}\n'
     BOT_TASKS = ' <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
     FREE = '<b>Free:</b> {free}'
-    uptime =' | <b>UPTM:</b> {uptime}'
+    uptime =' | <b>UPTM:</b> {uptime}\n'
+    Band = '<b>Bandwidth :</b> {traf}'
 
     ###--------BUTTONS-------
     PREVIOUS = '⫷'
