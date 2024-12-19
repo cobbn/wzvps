@@ -207,7 +207,7 @@ class WZMLStyle:
     BOT_TASKS = ' <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
     FREE = '<b>Free:</b> {free}'
     uptime =' | <b>UPTM:</b> {uptime}\n'
-    Band = '<b>Bandwidth :</b> {traf}'
+    traf = '<b>Bandwidth :</b> {traf}'
 
     ###--------BUTTONS-------
     PREVIOUS = '⫷'
