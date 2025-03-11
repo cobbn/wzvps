@@ -16,20 +16,20 @@ class WZMLStyle:
     ACTIVATE_BUTTON = 'Activate Temporary Token'
     TOKEN_MSG = '''<b><u>Generated Temporary Login Token!</u></b>
 <b>Temp Token:</b> <code>{token}</code>
-<b>Validity:</b> {validity}'''
+<b>Validity:</b> {validity}"""
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
-    ACTIVATED = '✅️ Activated ✅'
+    ACTIVATED = "✅️ Activated ✅"
     # ---------------------
     # async def login(_, message): --> __main__.py
-    LOGGED_IN = '<b>Already Bot Login In!</b>'
-    INVALID_PASS = '<b>Invalid Password!</b>\n\nKindly put the correct Password .'
-    PASS_LOGGED = '<b>Bot Permanent Login Successfully!</b>'
-    LOGIN_USED = '<b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code>'
+    LOGGED_IN = "<b>Already Bot Login In!</b>"
+    INVALID_PASS = "<b>Invalid Password!</b>\n\nKindly put the correct Password ."
+    PASS_LOGGED = "<b>Bot Permanent Login Successfully!</b>"
+    LOGIN_USED = "<b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code>"
     # ---------------------
     # async def log(_, message): ---> __main__.py
-    LOG_DISPLAY_BT = '📑 Log Display'
-    WEB_PASTE_BT = '📨 Web Paste (SB)'
+    LOG_DISPLAY_BT = "📑 Log Display"
+    WEB_PASTE_BT = "📨 Web Paste (SB)"
     # ---------------------
     # async def bot_help(client, message): ---> __main__.py
     BASIC_BT = 'Basic'
@@ -130,7 +130,7 @@ class WZMLStyle:
 ------------------------------------------
 {Source}
 ------------------------------------------\n\n"""
-    
+
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
     PM_START =            " <b><u>Task Started :</u></b>\n┃\n <b>Link:</b> <a href='{msg_link}'>Click Here</a>"
     L_LOG_START =           " <b><u>Leech Started :</u></b>\n┃\n <b>User :</b> {mention} ( #ID{uid} )\n <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
@@ -157,18 +157,18 @@ class WZMLStyle:
     M_CC =                  '<b>By: </b>{Tag}\n\n'
     M_BOT_MSG =             '<b>Link(s) have been Sent to Bot PM (Private)</b>'
     # ----- BUTTONS -------
-    CLOUD_LINK =      '☁️ Cloud Link'
-    SAVE_MSG =        '📨 Save Message'
-    RCLONE_LINK =     '♻️ RClone Link'
-    DDL_LINK =        '📎 {Serv} Link'
-    SOURCE_URL =      '🔐 Source Link'
-    INDEX_LINK_F =    '🗂 Index Link'
-    INDEX_LINK_D =    '⚡ Index Link'
-    VIEW_LINK =       '🌐 View Link'
-    CHECK_PM =        '📥 View in Bot PM'
-    CHECK_LL =        '🖇 View in Links Log'
-    MEDIAINFO_LINK =  '📃 MediaInfo'
-    SCREENSHOTS =     '🖼 ScreenShots'
+    CLOUD_LINK = "☁️ Cloud Link"
+    SAVE_MSG = "📨 Save Message"
+    RCLONE_LINK = "♻️ RClone Link"
+    DDL_LINK = "📎 {Serv} Link"
+    SOURCE_URL = "🔐 Source Link"
+    INDEX_LINK_F = "🗂 Index Link"
+    INDEX_LINK_D = "⚡ Index Link"
+    VIEW_LINK = "🌐 View Link"
+    CHECK_PM = "📥 View in Bot PM"
+    CHECK_LL = "🖇 View in Links Log"
+    MEDIAINFO_LINK = "📃 MediaInfo"
+    SCREENSHOTS = "🖼 ScreenShots"
     # ---------------------
 
     # def get_readable_message(): ---> bot_utilis.py
@@ -215,8 +215,10 @@ class WZMLStyle:
     NEXT = '⫸'
     # ---------------------
 
-    #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
-    STOP_DUPLICATE = 'File/Folder is already available in Drive.\nHere are {content} list results:'
+    # STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
+    STOP_DUPLICATE = (
+        "File/Folder is already available in Drive.\nHere are {content} list results:"
+    )
     # ---------------------
 
     # async def countNode(_, message): ----> gd_count.py
@@ -230,9 +232,9 @@ class WZMLStyle:
     # ---------------------
 
     # LIST ---> gd_list.py
-    LIST_SEARCHING = '<b>Searching for <i>{NAME}</i></b>'
-    LIST_FOUND = '<b>Found {NO} result for <i>{NAME}</i></b>'
-    LIST_NOT_FOUND = 'No result found for <i>{NAME}</i>'
+    LIST_SEARCHING = "<b>Searching for <i>{NAME}</i></b>"
+    LIST_FOUND = "<b>Found {NO} result for <i>{NAME}</i></b>"
+    LIST_NOT_FOUND = "No result found for <i>{NAME}</i>"
     # ---------------------
 
     # async def mirror_status(_, message): ----> status.py
@@ -288,4 +290,5 @@ class WZMLStyle:
 <b> Leech Prefix :</b> <code>{LPREFIX}</code>
 <b> Leech Suffix :</b> <code>{LSUFFIX}</code>
 <b> Leech Dumps :</b> <code>{LDUMP}</code>
-<b> Leech Remname :</b> <code>{LREMNAME}</code>'''
+<b> Leech Remname :</b> <code>{LREMNAME}</code>
+<b> Leech Metadata :</b> <code>{LMETA}</code>'''
