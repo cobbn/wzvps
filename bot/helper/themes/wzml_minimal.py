@@ -255,7 +255,7 @@ class WZMLStyle:
 <b> Language :</b> {LANG}
 
  <u><b>Available Args:</b></u>
-• <b>-s</b> or <b>-set</b>: Set Directly via Arg'''
+<b>-s</b> or <b>-set</b>: Set Directly via Arg'''
 
     UNIVERSAL = ''' <b><u>Universal Settings : {NAME}</u></b>
 
