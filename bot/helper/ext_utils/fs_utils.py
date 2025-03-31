@@ -244,7 +244,7 @@ async def edit_metadata(
         "-metadata",
         "Copyright=",
         "-metadata",
-        f"AUTHOR=Zyradaex",
+        f"AUTHOR=Reaper",
         "-metadata",
         "Encoded by=",
         "-metadata",
