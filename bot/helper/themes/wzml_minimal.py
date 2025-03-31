@@ -6,23 +6,24 @@ class WZMLStyle:
     ST_BN1_URL = 'https://t.me/acaatr'
     ST_BN2_NAME = 'Updates'
     ST_BN2_URL = 'https://t.me/Reaperzclub'
-    ST_MSG = "<b>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.Type {help_command} to get a list of available commands</b>"
-    ST_BOTPM = "<b>Now, This bot will send all your files and links here. Start Using ...</b>"
-    ST_UNAUTH = "<b>You Are not authorized user! Deploy your own WZML-X Mirror-Leech bot</b>"
-    OWN_TOKEN_GENERATE = "<b>Temporary Token is not yours!</b>\n\n<i>Kindly generate your own.</b>"
-    USED_TOKEN = "<b>Temporary Token already used!</b>\n\n<i>Kindly generate a new one.</b>"
-    LOGGED_PASSWORD = "<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</b>"
+    ST_MSG = '''<b>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</b>
+<b>Type {help_command} to get a list of available commands</b>'''
+    ST_BOTPM = '''<b>Now, This bot will send all your files and links here. Start Using ...</b>'''
+    ST_UNAUTH = '''<b>You Are not authorized user! Deploy your own WZML-X Mirror-Leech bot</b>'''
+    OWN_TOKEN_GENERATE = '''<b>Temporary Token is not yours!</b>\n\n<i>Kindly generate your own.</i>'''
+    USED_TOKEN = '''<b>Temporary Token already used!</b>\n\n<i>Kindly generate a new one.</i>'''
+    LOGGED_PASSWORD = '''<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</i>'''
     ACTIVATE_BUTTON = 'Activate Temporary Token'
-    TOKEN_MSG = "<b><u>Generated Temporary Login Token!</u></b>
-    <b>Temp Token:</b> <code>{token}</code>
-    <b>Validity:</b> {validity}"
+    TOKEN_MSG = '''<b><u>Generated Temporary Login Token!</u></b>
+<b>Temp Token:</b> <code>{token}</code>
+<b>Validity:</b> {validity}'''
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
     ACTIVATED = "✅️ Activated ✅"
     # ---------------------
     # async def login(_, message): --> __main__.py
     LOGGED_IN = "<b>Already Bot Login In!</b>"
-    INVALID_PASS = "<b>Invalid Password!</b>\n\nKindly put the correct Password ."
+    INVALID_PASS = "<b>Invalid Password!</b>\n\nKindly put the correct Password."
     PASS_LOGGED = "<b>Bot Permanent Login Successfully!</b>"
     LOGIN_USED = "<b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code>"
     # ---------------------
@@ -36,10 +37,10 @@ class WZMLStyle:
     MICS_BT = 'Mics'
     O_S_BT = 'Owner & Sudos'
     CLOSE_BT = 'Close'
-    HELP_HEADER = "<b>Help Guide Menu!</b>\n\n<b>NOTE: Click on any CMD to see more minor detalis.</b>"
+    HELP_HEADER = "<b>Help Guide Menu!</b>\n\n<b>NOTE: Click on any CMD to see more minor details.</b>"
 
     # async def stats(client, message):
-    BOT_STATS = "<b>BOT STATISTICS :</b>
+    BOT_STATS = '''<b>BOT STATISTICS :</b>
 <b>Bot Uptime :</b> {bot_uptime}
 
 <b>RAM ( MEMORY ) :</b>
@@ -54,9 +55,10 @@ class WZMLStyle:
 {disk_bar} {disk}%
 <b>Total Disk Read :</b> {disk_read}
 <b>Total Disk Write :</b> {disk_write}
-<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}"
-
-    SYS_STATS = "<b>OS SYSTEM :</b>
+<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
+    
+    '''
+    SYS_STATS = '''<b>OS SYSTEM :</b>
 <b>OS Uptime :</b> {os_uptime}
 <b>OS Version :</b> {os_version}
 <b>OS Arch :</b> {os_arch}
@@ -74,17 +76,17 @@ class WZMLStyle:
 <b>System Avg Load :</b> {sys_load}
 <b>P-Core(s) :</b> {p_core} | <b>V-Core(s) :</b> {v_core}
 <b>Total Core(s) :</b> {total_core}
-<b>Usable CPU(s) :</b> {cpu_use}"
-    
-    REPO_STATS = "<b>REPO STATISTICS :</b>
+<b>Usable CPU(s) :</b> {cpu_use}
+    '''
+    REPO_STATS = ''' <b>REPO STATISTICS :</b>
 <b>Bot Updated :</b> {last_commit}
 <b>Current Version :</b> {bot_version}
 <b>Latest Version :</b> {lat_version}
 <b>Last ChangeLog :</b> {commit_details}
 
- <b>REMARKS :</b> <code>{remarks}</code>"
-    
-    BOT_LIMITS =  "<b>BOT LIMITATIONS :</b>
+ <b>REMARKS :</b> <code>{remarks}</code>
+    '''
+    BOT_LIMITS = ''' <b>BOT LIMITATIONS :</b>
 <b>Direct Limit :</b> {DL} GB
 <b>Torrent Limit :</b> {TL} GB
 <b>GDrive Limit :</b> {GL} GB
@@ -97,8 +99,8 @@ class WZMLStyle:
 <b>Token Validity :</b> {TV}
 <b>User Time Limit :</b> {UTI} / task
 <b>User Parallel Tasks :</b> {UT}
-<b>Bot Parallel Tasks :</b> {BT}"
-    
+<b>Bot Parallel Tasks :</b> {BT}
+    '''
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
@@ -106,12 +108,12 @@ class WZMLStyle:
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS =  "<b>Restarted Successfully</b>
+    RESTART_SUCCESS = ''' <b>Restarted Successfully</b>
 <b>Date:</b> {date}
 <b>Time:</b> {time}
 <b>TimeZone:</b> {timz}
-<b>Version:</b> {version}"
-    RESTARTED =  "<b>Bot Restarted!</b>"
+<b>Version:</b> {version}'''
+    RESTARTED = ''' <b>Bot Restarted!</b>'''
     # ---------------------
 
     # async def ping(client, message): ---> __main__.py
@@ -120,14 +122,14 @@ class WZMLStyle:
     # ---------------------
 
     # async def onDownloadStart(self): --> tasks_listener.py
-    LINKS_START = "<b>Task Started</b>
+    LINKS_START = """<b>Task Started</b>
 <b>Mode:</b> {Mode}
-<b>By:</b> {Tag}\n\n"
-    LINKS_SOURCE = "<b>Source:</b>
+<b>By:</b> {Tag}\n\n"""
+    LINKS_SOURCE = """ <b>Source:</b>
 <b>Added On:</b> {On}
 ------------------------------------------
 {Source}
-------------------------------------------\n\n"
+-------------------------------------------\n\n"""
 
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
     PM_START =            " <b><u>Task Started :</u></b>\n┃\n <b>Link:</b> <a href='{msg_link}'>Click Here</a>"
@@ -236,16 +238,16 @@ class WZMLStyle:
     # ---------------------
 
     # async def mirror_status(_, message): ----> status.py
-    NO_ACTIVE_DL = "<b>No Active Downloads!</b>
+    NO_ACTIVE_DL = '''<b>No Active Downloads!</b>
     
  <b>Bot Stats</b>
  <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
- <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}"
-    
+ <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
+    '''
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING =  "<b><u>User Settings :</u></b>
+    USER_SETTING = ''' <b><u>User Settings :</u></b>
         
 <b> Name :</b> {NAME} ( <code>{ID}</code> )
 <b> Username :</b> {USERNAME}
@@ -253,9 +255,9 @@ class WZMLStyle:
 <b> Language :</b> {LANG}
 
  <u><b>Available Args:</b></u>
-<b>-s</b> or <b>-set</b>: Set Directly via Arg"
+<b>-s</b> or <b>-set</b>: Set Directly via Arg'''
 
-    UNIVERSAL =  "<b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = ''' <b><u>Universal Settings : {NAME}</u></b>
 
 <b> YT-DLP Options :</b> <b><code>{YT}</code></b>
 <b> Daily Tasks :</b> <code>{DT}</code> per day
@@ -263,9 +265,9 @@ class WZMLStyle:
 <b> User Session :</b> <code>{USESS}</code>
 <b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
 <b> Save Mode :</b> <code>{SAVE_MODE}</code>
-<b> User Bot PM :</b> <code>{BOT_PM}</code>"
+<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
 
-    MIRROR =  "<b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR = ''' <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
 <b> RClone Config :</b> <i>{RCLONE}</i>
 <b> Mirror Prefix :</b> <code>{MPREFIX}</code>
@@ -274,9 +276,9 @@ class WZMLStyle:
 <b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
 <b> User TD Mode :</b> <i>{TMODE}</i>
 <b> Total User TD(s) :</b> <i>{USERTD}</i>
-<b> Daily Mirror :</b> <code>{DM}</code> per day"
+<b> Daily Mirror :</b> <code>{DM}</code> per day'''
 
-    LEECH =  "<b><u>Leech Settings for {NAME}</u></b>
+    LEECH = ''' <b><u>Leech Settings for {NAME}</u></b>
 
 <b> Daily Leech : </b><code>{DL}</code> per day
 <b> Leech Type :</b> <i>{LTYPE}</i>
@@ -289,4 +291,5 @@ class WZMLStyle:
 <b> Leech Suffix :</b> <code>{LSUFFIX}</code>
 <b> Leech Dumps :</b> <code>{LDUMP}</code>
 <b> Leech Remname :</b> <code>{LREMNAME}</code>
-<b> Leech Metadata :</b> <code>{LMETA}</code>"
+<b> Leech Metadata :</b> <code>{LMETA}</code> '''
+    '''
