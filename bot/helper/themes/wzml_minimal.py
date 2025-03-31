@@ -295,4 +295,3 @@ class WZMLStyle:
 <b> Leech Remname :</b> <code>{LREMNAME}</code>
 <b> Leech Metadata :</b> <code>{LMETA}</code> '''
 
-    '''
