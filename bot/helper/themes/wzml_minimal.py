@@ -57,7 +57,7 @@ class WZMLStyle:
 <b>Total Disk Write :</b> {disk_write}
 <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
 
-    SYS_STATS = '''<b>OS SYSTEM :</b>
+    SYS_STATS = <b>OS SYSTEM :</b>
 <b>OS Uptime :</b> {os_uptime}
 <b>OS Version :</b> {os_version}
 <b>OS Arch :</b> {os_arch}
@@ -76,16 +76,16 @@ class WZMLStyle:
 <b>P-Core(s) :</b> {p_core} | <b>V-Core(s) :</b> {v_core}
 <b>Total Core(s) :</b> {total_core}
 <b>Usable CPU(s) :</b> {cpu_use}
-    '''
-    REPO_STATS = ''' <b>REPO STATISTICS :</b>
+    
+    REPO_STATS = <b>REPO STATISTICS :</b>
 <b>Bot Updated :</b> {last_commit}
 <b>Current Version :</b> {bot_version}
 <b>Latest Version :</b> {lat_version}
 <b>Last ChangeLog :</b> {commit_details}
 
  <b>REMARKS :</b> <code>{remarks}</code>
-    '''
-    BOT_LIMITS = ''' <b>BOT LIMITATIONS :</b>
+    
+    BOT_LIMITS =  <b>BOT LIMITATIONS :</b>
 <b>Direct Limit :</b> {DL} GB
 <b>Torrent Limit :</b> {TL} GB
 <b>GDrive Limit :</b> {GL} GB
@@ -99,7 +99,7 @@ class WZMLStyle:
 <b>User Time Limit :</b> {UTI} / task
 <b>User Parallel Tasks :</b> {UT}
 <b>Bot Parallel Tasks :</b> {BT}
-    '''
+    
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
@@ -107,12 +107,12 @@ class WZMLStyle:
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS = ''' <b>Restarted Successfully</b>
+    RESTART_SUCCESS =  <b>Restarted Successfully</b>
 <b>Date:</b> {date}
 <b>Time:</b> {time}
 <b>TimeZone:</b> {timz}
-<b>Version:</b> {version}'''
-    RESTARTED = ''' <b>Bot Restarted!</b>'''
+<b>Version:</b> {version
+    RESTARTED =  <b>Bot Restarted!</b>
     # ---------------------
 
     # async def ping(client, message): ---> __main__.py
@@ -237,16 +237,16 @@ class WZMLStyle:
     # ---------------------
 
     # async def mirror_status(_, message): ----> status.py
-    NO_ACTIVE_DL = '''<b>No Active Downloads!</b>
+    NO_ACTIVE_DL = <b>No Active Downloads!</b>
     
  <b>Bot Stats</b>
  <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
  <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
-    '''
+    
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = ''' <b><u>User Settings :</u></b>
+    USER_SETTING =  <b><u>User Settings :</u></b>
         
 <b> Name :</b> {NAME} ( <code>{ID}</code> )
 <b> Username :</b> {USERNAME}
@@ -254,9 +254,9 @@ class WZMLStyle:
 <b> Language :</b> {LANG}
 
  <u><b>Available Args:</b></u>
-<b>-s</b> or <b>-set</b>: Set Directly via Arg'''
+<b>-s</b> or <b>-set</b>: Set Directly via Arg
 
-    UNIVERSAL = ''' <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL =  <b><u>Universal Settings : {NAME}</u></b>
 
 <b> YT-DLP Options :</b> <b><code>{YT}</code></b>
 <b> Daily Tasks :</b> <code>{DT}</code> per day
@@ -264,9 +264,9 @@ class WZMLStyle:
 <b> User Session :</b> <code>{USESS}</code>
 <b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
 <b> Save Mode :</b> <code>{SAVE_MODE}</code>
-<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
+<b> User Bot PM :</b> <code>{BOT_PM}</code
 
-    MIRROR = ''' <b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR =  <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
 <b> RClone Config :</b> <i>{RCLONE}</i>
 <b> Mirror Prefix :</b> <code>{MPREFIX}</code>
@@ -275,9 +275,9 @@ class WZMLStyle:
 <b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
 <b> User TD Mode :</b> <i>{TMODE}</i>
 <b> Total User TD(s) :</b> <i>{USERTD}</i>
-<b> Daily Mirror :</b> <code>{DM}</code> per day'''
+<b> Daily Mirror :</b> <code>{DM}</code> per day
 
-    LEECH = ''' <b><u>Leech Settings for {NAME}</u></b>
+    LEECH =  <b><u>Leech Settings for {NAME}</u></b>
 
 <b> Daily Leech : </b><code>{DL}</code> per day
 <b> Leech Type :</b> <i>{LTYPE}</i>
@@ -290,5 +290,4 @@ class WZMLStyle:
 <b> Leech Suffix :</b> <code>{LSUFFIX}</code>
 <b> Leech Dumps :</b> <code>{LDUMP}</code>
 <b> Leech Remname :</b> <code>{LREMNAME}</code>
-<b> Leech Metadata :</b> <code>{LMETA}</code> '''
-    '''
+<b> Leech Metadata :</b> <code>{LMETA}</code> 
