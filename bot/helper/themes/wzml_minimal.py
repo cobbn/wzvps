@@ -17,6 +17,8 @@ class WZMLStyle:
     TOKEN_MSG = '''<b><u>Generated Temporary Login Token!</u></b>
 <b>Temp Token:</b> <code>{token}</code>
 <b>Validity:</b> {validity}'''
+
+
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
     ACTIVATED = "✅️ Activated ✅"
@@ -278,7 +280,7 @@ class WZMLStyle:
 <b> Total User TD(s) :</b> <i>{USERTD}</i>
 <b> Daily Mirror :</b> <code>{DM}</code> per day'''
 
-    LEECH = ''' <b><u>Leech Settings for {NAME}</u></b>
+    LEECH = ''' <b><u>Leech Settings for {NAME}</u></b> 
 
 <b> Daily Leech : </b><code>{DL}</code> per day
 <b> Leech Type :</b> <i>{LTYPE}</i>
@@ -292,4 +294,5 @@ class WZMLStyle:
 <b> Leech Dumps :</b> <code>{LDUMP}</code>
 <b> Leech Remname :</b> <code>{LREMNAME}</code>
 <b> Leech Metadata :</b> <code>{LMETA}</code> '''
+
     '''
