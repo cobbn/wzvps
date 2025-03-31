@@ -6,8 +6,7 @@ class WZMLStyle:
     ST_BN1_URL = 'https://t.me/acaatr'
     ST_BN2_NAME = 'Updates'
     ST_BN2_URL = 'https://t.me/Reaperzclub'
-    ST_MSG = "<b>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</b>
-<b>Type {help_command} to get a list of available commands</b>"
+    ST_MSG = "<b>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.Type {help_command} to get a list of available commands</b>"
     ST_BOTPM = "<b>Now, This bot will send all your files and links here. Start Using ...</b>"
     ST_UNAUTH = "<b>You Are not authorized user! Deploy your own WZML-X Mirror-Leech bot</b>"
     OWN_TOKEN_GENERATE = "<b>Temporary Token is not yours!</b>\n\n<i>Kindly generate your own.</b>"
@@ -15,8 +14,8 @@ class WZMLStyle:
     LOGGED_PASSWORD = "<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</b>"
     ACTIVATE_BUTTON = 'Activate Temporary Token'
     TOKEN_MSG = "<b><u>Generated Temporary Login Token!</u></b>
-<b>Temp Token:</b> <code>{token}</code>
-<b>Validity:</b> {validity}"
+    <b>Temp Token:</b> <code>{token}</code>
+    <b>Validity:</b> {validity}"
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
     ACTIVATED = "✅️ Activated ✅"
