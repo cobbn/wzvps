@@ -55,9 +55,8 @@ class WZMLStyle:
 {disk_bar} {disk}%
 <b>Total Disk Read :</b> {disk_read}
 <b>Total Disk Write :</b> {disk_write}
-<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
-    
-    '''
+<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}'''
+
     SYS_STATS = '''<b>OS SYSTEM :</b>
 <b>OS Uptime :</b> {os_uptime}
 <b>OS Version :</b> {os_version}
