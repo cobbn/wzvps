@@ -40,7 +40,7 @@ class WZMLStyle:
     HELP_HEADER = "<b>Help Guide Menu!</b>\n\n<b>NOTE: Click on any CMD to see more minor detalis.</b>"
 
     # async def stats(client, message):
-    BOT_STATS = '''<b>BOT STATISTICS :</b>
+    BOT_STATS = <b>BOT STATISTICS :</b>
 <b>Bot Uptime :</b> {bot_uptime}
 
 <b>RAM ( MEMORY ) :</b>
@@ -55,7 +55,7 @@ class WZMLStyle:
 {disk_bar} {disk}%
 <b>Total Disk Read :</b> {disk_read}
 <b>Total Disk Write :</b> {disk_write}
-<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}'''
+<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
 
     SYS_STATS = '''<b>OS SYSTEM :</b>
 <b>OS Uptime :</b> {os_uptime}
